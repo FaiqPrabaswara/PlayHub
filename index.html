@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayHub - Daftar Game</title>
+</head>
+<body>
+  <header>
+    <h1>PlayHub</h1>
+    <p>Temukan informasi game favoritmu di satu tempat.</p>
+    <nav aria-label="Navigasi utama">
+      <ul>
+        <li><a href="index.html" aria-current="page">Daftar Game</a></li>
+        <li><a href="add-game.html">Tambah Game</a></li>
+        <li><a href="detail-game.html">Detail Minecraft</a></li>
+        <li><a href="detail-valorant.html">Detail Valorant</a></li>
+        <li><a href="detail-elden-ring.html">Detail Elden Ring</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section aria-labelledby="daftar-game">
+      <h2 id="daftar-game">Daftar Game</h2>
+      <p>Berikut adalah koleksi game yang tersedia di PlayHub.</p>
+
+      <table border="1">
+        <caption>Data game PlayHub</caption>
+        <thead>
+          <tr>
+            <th scope="col">Gambar</th>
+            <th scope="col">Nama Game</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Platform</th>
+            <th scope="col">Developer</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="images/minecraft_images.jpg" alt="Sampul game Minecraft" width="160" height="90"></td>
+            <td><a href="detail-game.html">Minecraft</a></td>
+            <td>Sandbox</td>
+            <td>PC</td>
+            <td>Mojang Studios</td>
+          </tr>
+          <tr>
+            <td><img src="images/valorant_images.jpg" alt="Sampul game Valorant" width="160" height="90"></td>
+            <td><a href="detail-valorant.html">Valorant</a></td>
+            <td>FPS</td>
+            <td>PC</td>
+            <td>Riot Games</td>
+          </tr>
+          <tr>
+            <td><img src="images/eldenring_images.jpg" alt="Sampul game Elden Ring" width="160" height="90"></td>
+            <td><a href="detail-elden-ring.html">Elden Ring</a></td>
+            <td>Action RPG</td>
+            <td>PC</td>
+            <td>FromSoftware</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <article aria-labelledby="sorotan-minecraft">
+      <h2 id="sorotan-minecraft">Sorotan Game</h2>
+      <img src="images/minecraft_images.jpg" alt="Sampul game Minecraft" width="640" height="360">
+      <h3>Minecraft</h3>
+      <p>Minecraft adalah game sandbox yang mengajak pemain membangun, menjelajah, dan bertahan hidup di dunia blok.</p>
+      <p><a href="detail-game.html">Lihat detail Minecraft</a></p>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 PlayHub</p>
+  </footer>
+</body>
+</html>

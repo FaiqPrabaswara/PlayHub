@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title description">
+  <title id="title">Placeholder game PlayHub</title>
+  <desc id="description">Ilustrasi sederhana sebagai placeholder gambar game untuk PlayHub.</desc>
+  <rect width="640" height="360" fill="#e5e7eb"/>
+  <rect x="40" y="40" width="560" height="280" fill="#d1d5db"/>
+  <text x="320" y="165" fill="#1f2937" font-family="Arial, sans-serif" font-size="48" text-anchor="middle">PlayHub</text>
+  <text x="320" y="215" fill="#374151" font-family="Arial, sans-serif" font-size="24" text-anchor="middle">Game Placeholder</text>
+</svg>
