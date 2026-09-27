@@ -1,15 +1,14 @@
 # PlayHub
 
-PlayHub adalah proyek tugas Bab 2 HTML yang menampilkan daftar game dan halaman detail game. Proyek ini dibuat menggunakan HTML murni tanpa CSS, JavaScript, framework, backend, atau database.
+PlayHub adalah proyek HTML yang menampilkan daftar game dan halaman detail game.
 
 ## Fitur
 
 - Daftar game dalam tabel
 - Gambar untuk setiap game
-- Halaman detail Minecraft, Valorant, dan Elden Ring
+- Halaman detail game
 - Form tambah game
 - Navigasi antarhalaman
-- Struktur semantic HTML5 dan atribut aksesibilitas dasar
 
 ## Halaman
 
