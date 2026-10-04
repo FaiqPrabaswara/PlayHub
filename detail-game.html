@@ -1,66 +1,166 @@
 <!doctype html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PlayHub - Detail Minecraft</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header>
-    <h1>PlayHub</h1>
-    <p>Informasi lengkap game pilihan di PlayHub.</p>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="index.html">Daftar Game</a></li>
-        <li><a href="add-game.html">Tambah Game</a></li>
-        <li><a href="detail-game.html" aria-current="page">Detail Minecraft</a></li>
-        <li><a href="detail-valorant.html">Detail Valorant</a></li>
-        <li><a href="detail-elden-ring.html">Detail Elden Ring</a></li>
-      </ul>
-    </nav>
+
+  <header class="site-header">
+
+    <div class="container">
+
+      <h1>PlayHub</h1>
+
+      <p class="subtitle">
+        Informasi lengkap game pilihan di PlayHub.
+      </p>
+
+      <nav aria-label="Navigasi utama">
+
+        <ul class="menu">
+
+          <li>
+            <a href="index.html">
+              Daftar Game
+            </a>
+          </li>
+
+          <li>
+            <a href="add-game.html">
+              Tambah Game
+            </a>
+          </li>
+
+          <li>
+            <a href="detail-game.html" aria-current="page">
+              Detail Minecraft
+            </a>
+          </li>
+
+          <li>
+            <a href="detail-valorant.html">
+              Detail Valorant
+            </a>
+          </li>
+
+          <li>
+            <a href="detail-elden-ring.html">
+              Detail Elden Ring
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+    </div>
+
   </header>
 
+
   <main>
-    <article aria-labelledby="detail-minecraft">
-      <h2 id="detail-minecraft">Detail Game: Minecraft</h2>
-      <img src="images/minecraft_images.jpg" alt="Sampul game Minecraft" width="640" height="360">
-      <p>Minecraft adalah game sandbox yang dikembangkan oleh Mojang Studios untuk platform PC.</p>
 
-      <section aria-labelledby="informasi-game">
-        <h3 id="informasi-game">Informasi Game</h3>
-        <table>
-          <caption>Data Minecraft</caption>
-          <tbody>
-            <tr>
-              <th scope="row">Nama Game</th>
-              <td>Minecraft</td>
-            </tr>
-            <tr>
-              <th scope="row">Genre</th>
-              <td>Sandbox</td>
-            </tr>
-            <tr>
-              <th scope="row">Platform</th>
-              <td>PC</td>
-            </tr>
-            <tr>
-              <th scope="row">Developer</th>
-              <td>Mojang Studios</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <div class="container">
 
-      <section aria-labelledby="tentang-minecraft">
-        <h3 id="tentang-minecraft">Tentang Minecraft</h3>
-        <p>Pemain dapat mengumpulkan sumber daya, membuat bangunan, dan menjelajahi dunia yang dibuat secara prosedural.</p>
-        <p><a href="index.html">Kembali ke daftar game</a></p>
-      </section>
-    </article>
+      <article class="game-detail" aria-labelledby="detail-minecraft">
+
+        <h2 id="detail-minecraft">
+          Detail Game: Minecraft
+        </h2>
+
+        <img src="images/minecraft_images.jpg" alt="Sampul game Minecraft" class="detail-image">
+
+        <p>
+          Minecraft adalah game sandbox yang dikembangkan oleh
+          Mojang Studios untuk platform PC.
+        </p>
+
+
+        <section class="game-info" aria-labelledby="informasi-game">
+
+          <h3 id="informasi-game">
+            Informasi Game
+          </h3>
+
+          <table>
+
+            <caption>
+              Data Minecraft
+            </caption>
+
+            <tbody>
+
+              <tr>
+                <th scope="row">Nama Game</th>
+                <td>Minecraft</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Genre</th>
+                <td>Sandbox</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Platform</th>
+                <td>PC</td>
+              </tr>
+
+              <tr>
+                <th scope="row">Developer</th>
+                <td>Mojang Studios</td>
+              </tr>
+
+            </tbody>
+
+          </table>
+
+        </section>
+
+
+        <section class="about-game" aria-labelledby="tentang-minecraft">
+
+          <h3 id="tentang-minecraft">
+            Tentang Minecraft
+          </h3>
+
+          <p>
+            Pemain dapat mengumpulkan sumber daya,
+            membuat bangunan, dan menjelajahi dunia
+            yang dibuat secara prosedural.
+          </p>
+
+          <p>
+            <a href="index.html" class="button-link">
+              Kembali ke daftar game
+            </a>
+          </p>
+
+        </section>
+
+      </article>
+
+    </div>
+
   </main>
 
-  <footer>
-    <p>&copy; 2026 PlayHub</p>
+
+  <footer class="site-footer">
+
+    <div class="container">
+
+      <p>
+        &copy; 2026 PlayHub
+      </p>
+
+    </div>
+
   </footer>
+
 </body>
+
 </html>
