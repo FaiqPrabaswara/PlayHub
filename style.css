@@ -1,0 +1,253 @@
+/* Pengaturan dasar */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #2d2140;
+    background-color: #f5f0ff;
+}
+
+
+/* Container */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.site-header {
+    background-color: #6c3db5;
+    color: white;
+    padding: 20px 0;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.subtitle {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+/* Navigation */
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    background-color: #8253c7;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #4f278c;
+}
+
+
+/* Main */
+
+main {
+    padding: 30px 0;
+}
+
+main h2 {
+    color: #5a2ca0;
+    font-size: 28px;
+}
+
+main h3 {
+    color: #5a2ca0;
+}
+
+.game-list {
+    margin-bottom: 30px;
+}
+
+
+/* Tabel */
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid #c9b8e8;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e7dcfa;
+    color: #3f2171;
+}
+
+
+/* Gambar game */
+
+.game-image {
+    width: 120px;
+    height: 70px;
+    object-fit: cover;
+}
+
+.featured-image {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+}
+
+
+/* Link */
+
+a {
+    color: #5a2ca0;
+}
+
+a:hover {
+    color: #32166b;
+}
+
+
+/* Sorotan game */
+
+.featured-game {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #6c3db5;
+    margin-bottom: 30px;
+}
+
+.featured-game h2 {
+    margin-top: 0;
+}
+
+
+/* Detail game */
+
+.game-detail {
+    background-color: white;
+    padding: 25px;
+}
+
+.detail-image {
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.game-info {
+    margin-top: 25px;
+}
+
+.about-game {
+    margin-top: 25px;
+}
+
+
+/* Tombol link */
+
+.button-link {
+    display: inline-block;
+    background-color: #6c3db5;
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.button-link:hover {
+    background-color: #4f278c;
+}
+
+
+/* Footer */
+
+.site-footer {
+    background-color: #32166b;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+    }
+
+    .site-header h1 {
+        font-size: 26px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .menu a {
+        text-align: center;
+    }
+
+    main h2 {
+        font-size: 24px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .game-detail,
+    .featured-game {
+        padding: 15px;
+    }
+
+}
