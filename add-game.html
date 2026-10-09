@@ -1,14 +1,19 @@
+
 <!doctype html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PlayHub - Tambah Game</title>
+
+  <!-- Menghubungkan file CSS utama -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>PlayHub</h1>
     <p>Tambahkan game baru ke koleksi PlayHub.</p>
+
     <nav aria-label="Navigasi utama">
       <ul>
         <li><a href="index.html">Daftar Game</a></li>
@@ -20,51 +25,79 @@
     </nav>
   </header>
 
-  <main>
-    <article aria-labelledby="tambah-game">
+  <main class="add-game-main">
+    <article class="add-game-card" aria-labelledby="tambah-game">
       <h2 id="tambah-game">Form Tambah Game</h2>
       <p>Isi data berikut untuk menambahkan game ke daftar PlayHub.</p>
-      <img src="images/game-placeholder.svg" alt="Ilustrasi placeholder untuk game baru yang akan ditambahkan" width="640" height="360">
+
+      <img
+        class="add-game-image"
+        src="images/game-placeholder.svg"
+        alt="Ilustrasi game baru"
+        width="640"
+        height="360"
+      >
 
       <section aria-labelledby="data-game">
         <h3 id="data-game">Data Game</h3>
-        <form action="index.html" method="get">
-          <p>
-            <label for="nama-game">Nama Game</label><br>
-            <input type="text" id="nama-game" name="nama-game" required>
-          </p>
 
-          <p>
-            <label for="genre">Genre</label><br>
+        <form action="index.html" method="get" class="add-game-form">
+          <div class="form-group">
+            <label for="nama-game">Nama Game</label>
+            <input
+              type="text"
+              id="nama-game"
+              name="nama-game"
+              placeholder="Masukkan nama game"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="genre">Genre</label>
             <select id="genre" name="genre" required>
               <option value="">Pilih genre</option>
               <option value="sandbox">Sandbox</option>
               <option value="fps">FPS</option>
               <option value="action-rpg">Action RPG</option>
             </select>
-          </p>
+          </div>
 
-          <p>
-            <label for="platform">Platform</label><br>
+          <div class="form-group">
+            <label for="platform">Platform</label>
             <select id="platform" name="platform" required>
               <option value="">Pilih platform</option>
               <option value="pc">PC</option>
               <option value="konsol">Konsol</option>
               <option value="mobile">Mobile</option>
             </select>
-          </p>
+          </div>
 
-          <p>
-            <label for="developer">Developer</label><br>
-            <input type="text" id="developer" name="developer" required>
-          </p>
+          <div class="form-group">
+            <label for="developer">Developer</label>
+            <input
+              type="text"
+              id="developer"
+              name="developer"
+              placeholder="Masukkan nama developer"
+              required
+            >
+          </div>
 
-          <p>
-            <label for="deskripsi">Deskripsi</label><br>
-            <textarea id="deskripsi" name="deskripsi" rows="5" cols="40" required></textarea>
-          </p>
+          <div class="form-group">
+            <label for="deskripsi">Deskripsi</label>
+            <textarea
+              id="deskripsi"
+              name="deskripsi"
+              rows="5"
+              placeholder="Tuliskan deskripsi game"
+              required
+            ></textarea>
+          </div>
 
-          <p><input type="submit" value="Tambah Game"></p>
+          <button type="submit" class="add-game-button">
+            Tambah Game
+          </button>
         </form>
       </section>
     </article>
