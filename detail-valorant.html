@@ -1,66 +1,99 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlayHub - Detail Valorant</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayHub - Detail Valorant</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>PlayHub</h1>
-    <p>Informasi lengkap game pilihan di PlayHub.</p>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="index.html">Daftar Game</a></li>
-        <li><a href="add-game.html">Tambah Game</a></li>
-        <li><a href="detail-game.html">Detail Minecraft</a></li>
-        <li><a href="detail-valorant.html" aria-current="page">Detail Valorant</a></li>
-        <li><a href="detail-elden-ring.html">Detail Elden Ring</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <article aria-labelledby="detail-valorant">
-      <h2 id="detail-valorant">Detail Game: Valorant</h2>
-      <img src="images/valorant_images.jpg" alt="Sampul game Valorant" width="640" height="360">
-      <p>Valorant adalah game FPS kompetitif yang dikembangkan oleh Riot Games untuk platform PC.</p>
+<body class="valorant-page">
 
-      <section aria-labelledby="informasi-valorant">
-        <h3 id="informasi-valorant">Informasi Game</h3>
-        <table>
-          <caption>Data Valorant</caption>
-          <tbody>
-            <tr>
-              <th scope="row">Nama Game</th>
-              <td>Valorant</td>
-            </tr>
-            <tr>
-              <th scope="row">Genre</th>
-              <td>FPS</td>
-            </tr>
-            <tr>
-              <th scope="row">Platform</th>
-              <td>PC</td>
-            </tr>
-            <tr>
-              <th scope="row">Developer</th>
-              <td>Riot Games</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <header class="site-header">
+        <div class="container">
+            <h1>PlayHub</h1>
+            <p class="subtitle">Informasi lengkap game pilihan di PlayHub.</p>
 
-      <section aria-labelledby="tentang-valorant">
-        <h3 id="tentang-valorant">Tentang Valorant</h3>
-        <p>Pemain membentuk tim, memilih agen dengan kemampuan unik, dan bertanding dalam ronde berbasis objektif.</p>
-        <p><a href="index.html">Kembali ke daftar game</a></p>
-      </section>
-    </article>
-  </main>
+            <nav aria-label="Navigasi utama">
+                <ul class="menu">
+                    <li><a href="index.html">Daftar Game</a></li>
+                    <li><a href="add-game.html">Tambah Game</a></li>
+                    <li><a href="detail-game.html">Detail Minecraft</a></li>
+                    <li><a href="detail-valorant.html" aria-current="page">Detail Valorant</a></li>
+                    <li><a href="detail-elden-ring.html">Detail Elden Ring</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <footer>
-    <p>&copy; 2026 PlayHub</p>
-  </footer>
+    <main>
+        <div class="container">
+            <article class="game-detail" aria-labelledby="detail-valorant">
+
+                <h2 id="detail-valorant">Detail Game: Valorant</h2>
+
+                <img
+                    class="detail-image"
+                    src="images/valorant_images.jpg"
+                    alt="Sampul game Valorant"
+                >
+
+                <p>
+                    Valorant adalah game FPS kompetitif yang dikembangkan
+                    oleh Riot Games untuk platform PC.
+                </p>
+
+                <section class="game-info" aria-labelledby="informasi-valorant">
+                    <h3 id="informasi-valorant">Informasi Game</h3>
+
+                    <table>
+                        <caption>Data Valorant</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nama Game</th>
+                                <td>Valorant</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Genre</th>
+                                <td>FPS</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Platform</th>
+                                <td>PC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Developer</th>
+                                <td>Riot Games</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="about-game" aria-labelledby="tentang-valorant">
+                    <h3 id="tentang-valorant">Tentang Valorant</h3>
+
+                    <p>
+                        Pemain membentuk tim, memilih agen dengan kemampuan
+                        unik, dan bertanding dalam ronde berbasis objektif.
+                    </p>
+
+                    <p>
+                        <a class="button-link" href="index.html">
+                            Kembali ke daftar game
+                        </a>
+                    </p>
+                </section>
+
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 PlayHub</p>
+        </div>
+    </footer>
+
 </body>
 </html>
