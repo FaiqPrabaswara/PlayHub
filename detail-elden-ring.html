@@ -1,66 +1,100 @@
 <!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlayHub - Detail Elden Ring</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayHub - Detail Elden Ring</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header>
-    <h1>PlayHub</h1>
-    <p>Informasi lengkap game pilihan di PlayHub.</p>
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="index.html">Daftar Game</a></li>
-        <li><a href="add-game.html">Tambah Game</a></li>
-        <li><a href="detail-game.html">Detail Minecraft</a></li>
-        <li><a href="detail-valorant.html">Detail Valorant</a></li>
-        <li><a href="detail-elden-ring.html" aria-current="page">Detail Elden Ring</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <article aria-labelledby="detail-elden-ring">
-      <h2 id="detail-elden-ring">Detail Game: Elden Ring</h2>
-      <img src="images/eldenring_images.jpg" alt="Sampul game Elden Ring" width="640" height="360">
-      <p>Elden Ring adalah game action RPG yang dikembangkan oleh FromSoftware untuk platform PC.</p>
+<body class="elden-ring-page">
 
-      <section aria-labelledby="informasi-elden-ring">
-        <h3 id="informasi-elden-ring">Informasi Game</h3>
-        <table>
-          <caption>Data Elden Ring</caption>
-          <tbody>
-            <tr>
-              <th scope="row">Nama Game</th>
-              <td>Elden Ring</td>
-            </tr>
-            <tr>
-              <th scope="row">Genre</th>
-              <td>Action RPG</td>
-            </tr>
-            <tr>
-              <th scope="row">Platform</th>
-              <td>PC</td>
-            </tr>
-            <tr>
-              <th scope="row">Developer</th>
-              <td>FromSoftware</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+    <header class="site-header">
+        <div class="container">
+            <h1>PlayHub</h1>
+            <p class="subtitle">Informasi lengkap game pilihan di PlayHub.</p>
 
-      <section aria-labelledby="tentang-elden-ring">
-        <h3 id="tentang-elden-ring">Tentang Elden Ring</h3>
-        <p>Pemain menjelajahi dunia fantasi, mengembangkan karakter, dan menghadapi musuh dalam pertarungan action RPG.</p>
-        <p><a href="index.html">Kembali ke daftar game</a></p>
-      </section>
-    </article>
-  </main>
+            <nav aria-label="Navigasi utama">
+                <ul class="menu">
+                    <li><a href="index.html">Daftar Game</a></li>
+                    <li><a href="add-game.html">Tambah Game</a></li>
+                    <li><a href="detail-game.html">Detail Minecraft</a></li>
+                    <li><a href="detail-valorant.html">Detail Valorant</a></li>
+                    <li><a href="detail-elden-ring.html" aria-current="page">Detail Elden Ring</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <footer>
-    <p>&copy; 2026 PlayHub</p>
-  </footer>
+    <main>
+        <div class="container">
+            <article class="game-detail" aria-labelledby="detail-elden-ring">
+
+                <h2 id="detail-elden-ring">Detail Game: Elden Ring</h2>
+
+                <img
+                    class="detail-image"
+                    src="images/eldenring_images.jpg"
+                    alt="Sampul game Elden Ring"
+                >
+
+                <p>
+                    Elden Ring adalah game action RPG yang dikembangkan
+                    oleh FromSoftware untuk platform PC.
+                </p>
+
+                <section class="game-info" aria-labelledby="informasi-elden-ring">
+                    <h3 id="informasi-elden-ring">Informasi Game</h3>
+
+                    <table>
+                        <caption>Data Elden Ring</caption>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Nama Game</th>
+                                <td>Elden Ring</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Genre</th>
+                                <td>Action RPG</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Platform</th>
+                                <td>PC</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Developer</th>
+                                <td>FromSoftware</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="about-game" aria-labelledby="tentang-elden-ring">
+                    <h3 id="tentang-elden-ring">Tentang Elden Ring</h3>
+
+                    <p>
+                        Pemain menjelajahi dunia fantasi, mengembangkan
+                        karakter, dan menghadapi musuh dalam pertarungan
+                        action RPG.
+                    </p>
+
+                    <p>
+                        <a class="button-link" href="index.html">
+                            Kembali ke daftar game
+                        </a>
+                    </p>
+                </section>
+
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 PlayHub</p>
+        </div>
+    </footer>
+
 </body>
 </html>
