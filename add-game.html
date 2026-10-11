@@ -1,110 +1,177 @@
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlayHub - Tambah Game</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Menghubungkan file CSS utama -->
-  <link rel="stylesheet" href="style.css">
+    <title>PlayHub - Tambah Game</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f5f0ff;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #6c3db5;
+        }
+
+        .judul {
+            color: #5a2ca0;
+        }
+
+        .tombol {
+            background-color: #6c3db5;
+            color: white;
+        }
+
+        .tombol:hover {
+            background-color: #4f278c;
+            color: white;
+        }
+
+        footer {
+            background-color: #32166b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
+
 <body>
-  <header>
-    <h1>PlayHub</h1>
-    <p>Tambahkan game baru ke koleksi PlayHub.</p>
 
-    <nav aria-label="Navigasi utama">
-      <ul>
-        <li><a href="index.html">Daftar Game</a></li>
-        <li><a href="add-game.html" aria-current="page">Tambah Game</a></li>
-        <li><a href="detail-game.html">Detail Minecraft</a></li>
-        <li><a href="detail-valorant.html">Detail Valorant</a></li>
-        <li><a href="detail-elden-ring.html">Detail Elden Ring</a></li>
-      </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">PlayHub</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false"
+                aria-label="Buka navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Dashboard</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="daftar-game.html">Daftar Game</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="add-game.html">Tambah Game</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <main class="add-game-main">
-    <article class="add-game-card" aria-labelledby="tambah-game">
-      <h2 id="tambah-game">Form Tambah Game</h2>
-      <p>Isi data berikut untuk menambahkan game ke daftar PlayHub.</p>
+    <!-- Form Tambah Game -->
+    <div class="container mt-4 mb-5">
 
-      <img
-        class="add-game-image"
-        src="images/game-placeholder.svg"
-        alt="Ilustrasi game baru"
-        width="640"
-        height="360"
-      >
+        <h1 class="judul">Tambah Game</h1>
 
-      <section aria-labelledby="data-game">
-        <h3 id="data-game">Data Game</h3>
+        <p>Masukkan informasi game yang ingin ditambahkan ke PlayHub.</p>
 
-        <form action="index.html" method="get" class="add-game-form">
-          <div class="form-group">
-            <label for="nama-game">Nama Game</label>
-            <input
-              type="text"
-              id="nama-game"
-              name="nama-game"
-              placeholder="Masukkan nama game"
-              required
-            >
-          </div>
+        <div class="card shadow-sm">
+            <div class="card-body">
 
-          <div class="form-group">
-            <label for="genre">Genre</label>
-            <select id="genre" name="genre" required>
-              <option value="">Pilih genre</option>
-              <option value="sandbox">Sandbox</option>
-              <option value="fps">FPS</option>
-              <option value="action-rpg">Action RPG</option>
-            </select>
-          </div>
+                <form action="#" method="get">
 
-          <div class="form-group">
-            <label for="platform">Platform</label>
-            <select id="platform" name="platform" required>
-              <option value="">Pilih platform</option>
-              <option value="pc">PC</option>
-              <option value="konsol">Konsol</option>
-              <option value="mobile">Mobile</option>
-            </select>
-          </div>
+                    <div class="mb-3">
+                        <label for="namaGame" class="form-label">
+                            Nama Game
+                        </label>
+                        <input type="text" class="form-control"
+                            id="namaGame" name="namaGame"
+                            placeholder="Contoh: Minecraft" required>
+                    </div>
 
-          <div class="form-group">
-            <label for="developer">Developer</label>
-            <input
-              type="text"
-              id="developer"
-              name="developer"
-              placeholder="Masukkan nama developer"
-              required
-            >
-          </div>
+                    <div class="mb-3">
+                        <label for="genre" class="form-label">
+                            Genre
+                        </label>
+                        <select class="form-select" id="genre"
+                            name="genre" required>
+                            <option value="">Pilih genre game</option>
+                            <option value="Sandbox">Sandbox</option>
+                            <option value="FPS">FPS</option>
+                            <option value="Action RPG">Action RPG</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Racing">Racing</option>
+                        </select>
+                    </div>
 
-          <div class="form-group">
-            <label for="deskripsi">Deskripsi</label>
-            <textarea
-              id="deskripsi"
-              name="deskripsi"
-              rows="5"
-              placeholder="Tuliskan deskripsi game"
-              required
-            ></textarea>
-          </div>
+                    <div class="mb-3">
+                        <label for="platform" class="form-label">
+                            Platform
+                        </label>
+                        <select class="form-select" id="platform"
+                            name="platform" required>
+                            <option value="">Pilih platform</option>
+                            <option value="PC">PC</option>
+                            <option value="PlayStation">PlayStation</option>
+                            <option value="Xbox">Xbox</option>
+                            <option value="Mobile">Mobile</option>
+                        </select>
+                    </div>
 
-          <button type="submit" class="add-game-button">
-            Tambah Game
-          </button>
-        </form>
-      </section>
-    </article>
-  </main>
+                    <div class="mb-3">
+                        <label for="developer" class="form-label">
+                            Developer
+                        </label>
+                        <input type="text" class="form-control"
+                            id="developer" name="developer"
+                            placeholder="Nama developer" required>
+                    </div>
 
-  <footer>
-    <p>&copy; 2026 PlayHub</p>
-  </footer>
+                    <div class="mb-3">
+                        <label for="deskripsi" class="form-label">
+                            Deskripsi Game
+                        </label>
+                        <textarea class="form-control"
+                            id="deskripsi" name="deskripsi"
+                            rows="4"
+                            placeholder="Tuliskan deskripsi game"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn tombol">
+                        Simpan Game
+                    </button>
+
+                    <button type="reset" class="btn btn-secondary">
+                        Reset
+                    </button>
+
+                    <a href="daftar-game.html"
+                        class="btn btn-outline-secondary">
+                        Kembali
+                    </a>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="mb-0">&copy; 2026 PlayHub</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
