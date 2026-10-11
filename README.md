@@ -1,55 +1,55 @@
+
 # PlayHub
 
-PlayHub adalah proyek tugas Bab 2 HTML yang menampilkan daftar game dan halaman detail game. Proyek ini dibuat menggunakan HTML murni tanpa CSS, JavaScript, framework, backend, atau database.
-
-## Fitur
-
-- Daftar game dalam tabel
-- Gambar untuk setiap game
-- Halaman detail Minecraft, Valorant, dan Elden Ring
-- Form tambah game
-- Navigasi antarhalaman
-- Struktur semantic HTML5 dan atribut aksesibilitas dasar
-
-## Halaman
-
-| Halaman | Deskripsi |
-| --- | --- |
-| `index.html` | Daftar game PlayHub |
-| `add-game.html` | Form untuk menambahkan game |
-| `detail-game.html` | Detail game Minecraft |
-| `detail-valorant.html` | Detail game Valorant |
-| `detail-elden-ring.html` | Detail game Elden Ring |
-
-## Data Game
-
-| Nama Game | Genre | Platform | Developer |
-| --- | --- | --- | --- |
-| Minecraft | Sandbox | PC | Mojang Studios |
-| Valorant | FPS | PC | Riot Games |
-| Elden Ring | Action RPG | PC | FromSoftware |
-
-## Struktur Folder
-
-```text
-PlayHub/
-|-- index.html
-|-- add-game.html
-|-- detail-game.html
-|-- detail-valorant.html
-|-- detail-elden-ring.html
-|-- README.md
-`-- images/
-    |-- minecraft_images.jpg
-    |-- valorant_images.jpg
-    |-- eldenring_images.jpg
-    `-- game-placeholder.svg
-```
-
-## Cara Menjalankan
-
-Buka file `index.html` di browser, lalu gunakan navigasi untuk berpindah ke halaman lainnya.
+## Deskripsi
+PlayHub adalah aplikasi web sederhana untuk menampilkan informasi
+game favorit. Pengguna dapat melihat daftar game, membaca detail
+game, dan mengisi form untuk menambahkan informasi game.
 
 ## Teknologi
+- HTML
+- CSS
+- Bootstrap 5
 
-- HTML5
+## Fitur
+1. Dashboard dengan card game.
+2. Halaman daftar game dalam bentuk tabel.
+3. Form tambah game.
+4. Navigasi responsif.
+5. Halaman detail Minecraft, Valorant, dan Elden Ring.
+
+## Alasan Memilih Bootstrap
+Saya memilih Bootstrap karena menyediakan komponen siap pakai,
+seperti navbar, card, tabel, dan form. Bootstrap juga menyediakan
+grid yang membantu mengatur tampilan website agar menyesuaikan
+ukuran layar desktop maupun mobile. Dengan Bootstrap, proses
+pembuatan antarmuka PlayHub menjadi lebih mudah dan terstruktur.
+
+## Screenshot
+
+### Dashboard
+Desktop:
+
+![Dashboard Desktop](docs/screenshots/dashboard-desktop.png)
+
+Mobile:
+
+![Dashboard Mobile](docs/screenshots/dashboard-mobile.png)
+
+### Daftar Game
+Desktop:
+
+![Daftar Game Desktop](docs/screenshots/daftar-game-desktop.png)
+
+Mobile:
+
+![Daftar Game Mobile](docs/screenshots/daftar-game-mobile.png)
+
+### Tambah Game
+Desktop:
+
+![Tambah Game Desktop](docs/screenshots/tambah-game-desktop.png)
+
+Mobile:
+
+![Tambah Game Mobile](docs/screenshots/tambah-game-mobile.png)
